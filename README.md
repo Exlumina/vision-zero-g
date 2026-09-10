@@ -1,37 +1,40 @@
 # Vision Zero-G
 
-**A compact camera-drone prototype for movement inside spacecraft cabins.**
+**A camera-drone prototype designed for microgravity inside spacecraft cabins.**
 
-I designed Vision Zero-G in Fusion 360 to explore a camera platform that could move and orient itself in microgravity. The physical prototype combines a printed frame, eight electric ducted fan modules, a Pixhawk flight controller and a Raspberry Pi companion computer.
-
-The goal is to film crew activities without a fixed camera mount or continuous manual positioning. Autonomous navigation and tracking are planned capabilities. This repository documents the mechanical design, assembled hardware and early control experiments.
+I designed Vision Zero-G in Fusion 360 around a printed frame, eight electric ducted fan modules, a Pixhawk controller and a Raspberry Pi companion computer. The aim was to film crew activities from a mobile viewpoint, without a fixed camera mount or continuous manual positioning.
 
 <p align="center">
-  <img src="media/IMG_20250710_200412287.jpg" width="520" alt="Vision Zero-G physical prototype with a white honeycomb cover and eight duct modules on a blue work mat">
+  <a href="media/IMG_20250710_200412287.jpg"><img src="media/IMG_20250710_200412287.jpg" width="340" alt="Vision Zero-G prototype: white honeycomb frame, eight duct modules and blue propellers"></a><br>
+  <sub>The assembled prototype, photographed in July 2025.</sub>
 </p>
 
-## Explore the project
+## Project status
 
-| | |
+Vision Zero-G was discontinued after the project's sponsor lost funding. Development reached CAD design, physical prototype assembly and early control experiments. The project did not progress to an orbital demonstration.
+
+This repository preserves that work. Autonomous navigation and camera tracking were intended capabilities; the archived sketches are not deployable flight firmware.
+
+## Explore the archive
+
+| Documentation | Contents |
 | --- | --- |
-| [Mechanical design and CAD](docs/mechanical-design.md) | Frame, duct arrangement, electronics packaging and revision history |
-| [How it is intended to work](docs/system-design.md) | Propulsion, control architecture and camera-navigation concept |
-| [Hardware choices](docs/hardware.md) | Main components and development tradeoffs |
-| [Control experiments](docs/software.md) | Original Arduino and Pixhawk-oriented sketches |
-| [Prototype gallery](docs/gallery.md) | Five photographs of the assembled prototype |
-| [Development](docs/development.md) | Work completed and the next engineering stages |
+| [Mechanical design](docs/mechanical-design.md) | Frame, fan arrangement, CAD and drawing revisions |
+| [System concept](docs/system-design.md) | Intended motion, camera functions and control architecture |
+| [Hardware](docs/hardware.md) | Component selections and packaging decisions |
+| [Control experiments](docs/software.md) | What the two sketches contain and where they stop |
+| [Photographs](docs/gallery.md) | Five views of the physical prototype |
+| [Project history](docs/development.md) | Development record and work left unfinished |
 
-## CAD and drawing
+## Design files
 
-- [Download the v0.5.1 STEP assembly](hardware/cad/EXRI_Vision_Zero-G_v0.5.1.step) · approximately 40.6 MB
-- [View the v0.5.2 engineering drawing](hardware/drawings/EXS_Vision_Zero-G_v0.5.2_Drawing_v10.pdf)
+| Asset | Version | Format |
+| --- | --- | --- |
+| [CAD assembly](hardware/cad/EXRI_Vision_Zero-G_v0.5.1.step) | v0.5.1 | STEP · 40.6 MB |
+| [Engineering drawing](hardware/drawings/EXS_Vision_Zero-G_v0.5.2_Drawing_v10.pdf) | v0.5.2 | PDF · 1 sheet |
 
-The STEP contains the mechanical and electronics assembly. The drawing describes a later revision and is labelled separately. The STEP is a geometry exchange file; it does not contain the Fusion feature timeline.
+The drawing covers a later revision than the STEP. The STEP contains assembly geometry and component placement, without the original Fusion feature timeline.
 
-## Development scope
+**Mechanical design: Kian Konrad Tajbakhsh · Exlumina**
 
-The work presented here covers CAD design, physical prototype assembly, component integration and early control-code experiments. The sketches are developmental source, not deployable flight firmware. Autonomous navigation, microgravity manoeuvring and spacecraft qualification remain development work.
-
-**Design: Kian Konrad Tajbakhsh · Exlumina**
-
-See [rights and attribution](NOTICE.md) for the scope of the repository materials.
+[Rights and attribution](NOTICE.md) · [File checksums](SHA256SUMS)

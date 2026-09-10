@@ -1,6 +1,8 @@
 # Control software
 
-Vision Zero-G's intended control system combines attitude stabilization, translation control and navigation inside a pressurized spacecraft. The two historical sketches preserved here capture early experiments with that architecture. They are not deployable firmware and do not demonstrate autonomous flight or microgravity operation.
+[Overview](../README.md) · [Source archive](../code/README.md) · [System concept](system-design.md)
+
+Vision Zero-G's intended control system combined attitude stabilization, translation control and navigation inside a pressurized spacecraft. The two historical sketches preserved here capture early experiments with that architecture. They are not deployable firmware and do not demonstrate autonomous flight or microgravity operation.
 
 ## Arduino experiment
 
@@ -14,8 +16,8 @@ The [Pixhawk-oriented sketch](../code/archive/pixhawk-control-experiment.ino) ex
 
 It requests a 400 Hz motor update rate, while the calculation loop includes a 10 ms delay. Those are different rates. The file does not implement translation, position hold, operator commands, camera processing or autonomous navigation. Its library interfaces and board integration have not been validated by a reproducible build.
 
-## Work still required
+## Limitations of the archived source
 
-Both sketches need time-aware control calculations, anti-windup, a motor allocation derived from the actual thruster geometry, and validation against measured hardware behavior. Neither includes an explicit arming/disarming state machine, emergency stop or complete failsafe handling. Do not run these sketches on connected motors before correcting and validating the control and stop behaviour.
+Before further use, both sketches would need time-aware control calculations, anti-windup, a motor allocation derived from the actual thruster geometry, and validation against measured hardware behavior. Neither includes an explicit arming/disarming state machine, emergency stop or complete failsafe handling. Do not run these sketches on connected motors before correcting and validating the control and stop behaviour.
 
-The wider project direction includes visual navigation, remote operation and camera tracking. Those capabilities are not implemented in these files. Completing them requires a separate navigation and command stack, integration with the flight controller, and staged testing.
+The wider project direction included visual navigation, remote operation and camera tracking. Those capabilities are not implemented in these files. They remained unfinished when the project was discontinued.

@@ -1,5 +1,7 @@
 # Rights and attribution
 
+[Overview](README.md)
+
 Vision Zero-G mechanical design: Kian Konrad Tajbakhsh, Exlumina.
 
 The CAD assembly includes representations of commercial components for packaging and integration. Product names and marks belong to their respective owners. Their inclusion does not imply endorsement or partnership.

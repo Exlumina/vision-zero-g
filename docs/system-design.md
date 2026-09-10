@@ -1,40 +1,34 @@
-# How Vision Zero-G is intended to work
+# System concept
 
-Vision Zero-G is intended for a pressurized spacecraft cabin. Its fans move the surrounding air to generate thrust. The design is for an interior microgravity environment; air propulsion requires an atmosphere.
+[Overview](../README.md) · [Mechanical design](mechanical-design.md) · [Control experiments](software.md)
 
-## Motion
+Vision Zero-G was conceived as a mobile camera platform for a pressurised spacecraft cabin. Its fans would generate thrust by moving the surrounding air. The concept depended on an atmosphere and targeted the interior of a spacecraft.
 
-The target is six degrees of freedom: movement along three axes and rotation about three axes. Eight fan modules surround the central enclosure, with four perpendicular to the plates and four angled within the frame plane.
+## Motion in six degrees of freedom
 
-Changing the combination of fan forces is intended to produce either translation or rotation. This requires a controller that accounts for each fan's position, direction and response. A layout alone does not determine whether a particular motor and propeller combination can produce every required command, especially where reverse thrust is needed.
+The intended motion combined translation along three axes with rotation about three axes. Four fan axes were perpendicular to the central plates; four more were angled within the frame plane. The controller would combine their forces to change position and orientation.
 
-The historical architecture references ArduSub's eight-thruster `vectored6dof` arrangement. [ArduSub's frame documentation](https://ardupilot.org/sub/docs/sub-frames.html) describes that ROV layout. Adapting the idea to this air-propelled vehicle requires its own actuator model and control tuning.
+The design referenced ArduSub's eight-thruster `vectored6dof` arrangement. [ArduSub's frame documentation](https://ardupilot.org/sub/docs/sub-frames.html) describes that ROV layout. Applying it to this air-propelled prototype required a separate actuator model, motor allocation and control tuning, including assessment of reverse-thrust authority.
 
-## Planned control architecture
+## Intended control architecture
 
 ```mermaid
-flowchart LR
-    A[Camera and range sensing] --> B[Companion computer: localization and tracking]
-    B --> C[Desired position and orientation]
-    C --> D[Flight controller: feedback and motor allocation]
-    D --> E[Two four-in-one ESCs]
-    E --> F[Eight EDF modules]
-    F --> G[Vehicle motion]
-    G --> A
-    H[Inertial measurements] --> D
-    I[Manual command interface] --> C
+flowchart TB
+    S[Camera and range sensing] --> N[Localisation and tracking]
+    N --> C[Motion command]
+    M[Manual input] --> C
+    C --> F[Flight controller]
+    I[Inertial feedback] --> F
+    F --> E[Two four-in-one ESCs]
+    E --> T[Eight EDF modules]
 ```
 
-This diagram describes the intended integrated system. The archived sketches cover early control experiments; they do not implement this complete loop.
+The Raspberry Pi was intended to handle higher-level camera and navigation processing, with the Pixhawk handling vehicle feedback and motor control. The two archived sketches explored parts of the controller; they did not implement this integrated architecture.
 
-## Camera and navigation
+## Camera functions
 
-The camera-platform concept combines filming with a mobile viewpoint. The development plan calls for onboard visual mapping, range sensing, subject tracking and manual control. These functions would let the platform maintain a useful camera position while responding to movement in the cabin.
+The goal was to maintain a useful viewpoint while filming crew activities. Visual mapping, range sensing, subject tracking and manual control formed the intended feature set. Camera and range-sensor integration, localisation and the command interface remained unfinished when the project ended.
 
-A Pixhawk controller and Raspberry Pi Zero 2 W provide the intended division between low-level vehicle control and higher-level processing. Camera selection, range-sensor integration, localization and the command interface still need a complete software implementation and validation.
+## Power architecture
 
-## Power
-
-The design uses a 3S battery architecture, an XT60 connection, two four-in-one ESCs and a step-down converter for the electronics. Power distribution, peak current, thermal behaviour and endurance need to be characterised on the assembled hardware.
-
-[Back to the project](../README.md)
+The design used a 3S battery architecture, an XT60 connection, two four-in-one ESCs and a step-down converter. Endurance, peak current and thermal performance are not specified by this archive.

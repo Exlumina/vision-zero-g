@@ -1,26 +1,29 @@
-# Development
+# Project history
 
-Vision Zero-G progressed through mechanical layouts, component selection, printed hardware and early control experiments. The archive contains several design revisions from 2024 and photographs of the assembled white-frame prototype from July 2025.
+[Overview](../README.md) · [Design](mechanical-design.md) · [Photographs](gallery.md)
 
-## Work in this repository
+Vision Zero-G was discontinued after the project's sponsor lost funding. Development reached CAD design, physical prototype assembly and early control experiments. The project did not progress to an orbital demonstration.
 
-- A complete v0.5.1 STEP assembly exported from the Fusion design.
-- The later v0.5.2 annotated drawing, issued in December 2024.
-- Five photographs showing the assembled frame, fan modules and electronics.
-- Two historical control sketches: an Arduino/BNO055 experiment and a Pixhawk-oriented attitude-control experiment.
+## Development record
 
-The physical assembly and CAD are the main results presented here. The software archive records the early control approach and its unfinished areas.
+| Record | Work preserved |
+| --- | --- |
+| 2024 design revisions | Mechanical layouts, component selection and electronics packaging |
+| v0.5.1 CAD | The complete mechanical and electronics assembly in STEP format |
+| December 2024 drawing | The annotated v0.5.2 layout, issued on 12 December |
+| Early control software | Arduino/BNO055 and Pixhawk-oriented experiments |
+| July 2025 photographs | The assembled white-frame prototype and installed electronics |
 
-## Next engineering stages
+These dates identify the design records and photographs. The STEP was exported in September 2026 for this archive; its export date is separate from the original design work.
 
-1. **Complete the hardware configuration.** Record the exact installed parts, wiring, mass, balance and battery configuration.
-2. **Characterise propulsion.** Measure each motor/propeller/ESC combination and establish available thrust directions, current draw and response.
-3. **Develop the controller.** Build a supported implementation with defined motor allocation, sensor feedback, arming and stop behaviour.
-4. **Integrate navigation.** Add the selected camera and range sensing, localization, manual commands and tracking functions.
-5. **Test controlled movement.** Record test conditions, commands, telemetry and results before progressing to a microgravity campaign.
+## Work left unfinished
 
-Parabolic-flight testing and spacecraft use are later objectives. They require separate test planning and acceptance; this repository does not present a flight-qualified system.
+The original direction included onboard mapping, camera tracking, manual commands and controlled movement in microgravity. The following work remained before an integrated demonstration:
 
-Longer-term design ideas include a wider-view camera, more integrated electronics and a charging interface. They remain future work rather than features of the photographed prototype.
+- Finalise the as-built configuration, wiring, mass and balance.
+- Measure actuator thrust, direction, current draw and response.
+- Complete motor allocation, sensor feedback, arming and stop behaviour in a supported controller implementation.
+- Integrate camera and range sensing with localisation and tracking.
+- Record controlled motion tests before a microgravity test campaign.
 
-[Back to the project](../README.md)
+Parabolic testing and spacecraft use were later objectives. Wider-view cameras, integrated electronics and a charging interface were longer-term ideas. They are part of the project's original direction, not an active development schedule.

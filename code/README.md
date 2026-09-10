@@ -7,4 +7,4 @@ This archive preserves two experimental sketches from Vision Zero-G's developmen
 
 The source is retained in its historical form. Neither sketch is deployable flight firmware. No reproducible build, hardware validation or flight result is provided, and neither includes complete arming or failsafe behavior. Do not upload these files to a powered propulsion system as operating firmware.
 
-See [Control software](../docs/software.md) for implemented behavior, known defects and the remaining work.
+See [Control software](../docs/software.md) for implemented behavior, known defects and the limitations of the archived source.

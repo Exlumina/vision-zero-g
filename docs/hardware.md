@@ -1,24 +1,26 @@
-# Hardware choices
+# Hardware
 
-The design packages commercially available electronics inside a custom printed frame. The controller, companion computer and two ESCs sit between the plates, with short connections to the surrounding fan modules.
+[Overview](../README.md) · [Mechanical design](mechanical-design.md) · [System concept](system-design.md)
 
-| Subsystem | Design choice | Role |
+The design packaged commercially available electronics inside a custom printed frame. The controller, companion computer and two four-in-one ESCs sat between the plates, connected to the surrounding fan modules.
+
+## Component selections
+
+| Subsystem | Documented selection | Design role |
 | --- | --- | --- |
 | Flight controller | Pixhawk 6C Mini | Vehicle feedback and motor control |
-| Companion computer | Raspberry Pi Zero 2 W | Intended camera, tracking and navigation processing |
-| Propulsion | Eight EDF modules | Distributed thrust around the frame |
-| Motors | BETAFPV 1103 8500KV, 3S selection | Drive the small propellers |
-| Propellers | Gemfan 45 mm selection | Air movement within the ducts |
+| Companion computer | Raspberry Pi Zero 2 W | Intended camera and navigation processing |
+| Propulsion | Eight EDF modules | Distributed thrust |
+| Motors | BETAFPV 1103 8500KV, 3S | Propeller drive |
+| Propellers | Gemfan 45 mm | Later drawing and parts-list selection |
 | ESCs | Two four-in-one units | Eight motor channels |
-| Power interface | XT60 and step-down converter | Battery connection and electronics supply |
-| Structure | Printed plates, ducts, inserts and spacers | Mechanical packaging and service access |
+| Power | XT60 and step-down converter | Battery connection and electronics supply |
+| Structure | Printed plates, ducts, inserts and spacers | Mechanical packaging |
 
-The table records the documented component selections. The STEP contains imported component names, including a Gemfan D63 2.5-inch propeller label, while the later drawing specifies 45 mm propellers. Those records should not be treated as an exact as-built BOM.
+This records the design selections rather than a final as-built bill of materials. The STEP retains a `Gemfan D63 2.5-inch` component label, while the later drawing specifies 45 mm propellers. The two records are kept distinct.
 
-The parts work included comparing individual ESCs with compact four-in-one units, evaluating battery sizes, and considering several Raspberry Pi models. Space inside the enclosure was a recurring constraint. The later layout packages two four-in-one ESCs around the controller and companion computer.
+## Packaging decisions
 
-The procurement worksheet included camera and battery options as well as discarded alternatives. It is not a final manufacturing BOM. Camera/range-sensor integration, exact battery configuration and the complete as-built parts list remain part of further development.
+The parts work compared individual ESCs with compact four-in-one units, evaluated battery sizes and considered several Raspberry Pi models. Space inside the enclosure was a recurring constraint. The later layout accommodated two four-in-one ESCs alongside the controller and companion computer.
 
-The current archive does not provide a measured mass, thrust curve, endurance result or qualified materials list. These need to be established on the chosen physical configuration.
-
-[Mechanical layout](mechanical-design.md) · [System concept](system-design.md)
+The procurement worksheet also contained camera and battery options and discarded alternatives. Camera/range-sensor integration and a final as-built configuration were unfinished. No measured mass, thrust curve or endurance result is included in this archive.
