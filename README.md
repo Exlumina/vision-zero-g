@@ -15,6 +15,18 @@ Vision Zero-G was discontinued after the project's sponsor lost funding. Develop
 
 This repository preserves that work. Autonomous navigation and camera tracking were intended capabilities; the archived sketches are not deployable flight firmware.
 
+## Design files
+
+[![Download CAD assembly (STEP, v0.5.1)](https://img.shields.io/badge/Download-CAD_assembly_STEP-222222?style=for-the-badge)](https://raw.githubusercontent.com/Exlumina/vision-zero-g/main/hardware/cad/EXRI_Vision_Zero-G_v0.5.1.step)
+[![Download engineering drawing (PDF, v0.5.2)](https://img.shields.io/badge/Download-Engineering_drawing_PDF-222222?style=for-the-badge)](https://raw.githubusercontent.com/Exlumina/vision-zero-g/main/hardware/drawings/EXS_Vision_Zero-G_v0.5.2_Drawing_v10.pdf)
+
+| Asset | Version | Format |
+| --- | --- | --- |
+| [CAD assembly](hardware/cad/EXRI_Vision_Zero-G_v0.5.1.step) | v0.5.1 | STEP · 40.6 MB |
+| [Engineering drawing](hardware/drawings/EXS_Vision_Zero-G_v0.5.2_Drawing_v10.pdf) | v0.5.2 | PDF · 1 sheet |
+
+The drawing covers a later revision than the STEP. The STEP contains assembly geometry and component placement, without the original Fusion feature timeline.
+
 ## Explore the archive
 
 | Documentation | Contents |
@@ -25,15 +37,6 @@ This repository preserves that work. Autonomous navigation and camera tracking w
 | [Control experiments](docs/software.md) | What the two sketches contain and where they stop |
 | [Photographs](docs/gallery.md) | Five views of the physical prototype |
 | [Project history](docs/development.md) | Development record and work left unfinished |
-
-## Design files
-
-| Asset | Version | Format |
-| --- | --- | --- |
-| [CAD assembly](hardware/cad/EXRI_Vision_Zero-G_v0.5.1.step) | v0.5.1 | STEP · 40.6 MB |
-| [Engineering drawing](hardware/drawings/EXS_Vision_Zero-G_v0.5.2_Drawing_v10.pdf) | v0.5.2 | PDF · 1 sheet |
-
-The drawing covers a later revision than the STEP. The STEP contains assembly geometry and component placement, without the original Fusion feature timeline.
 
 **Mechanical design: Kian Konrad Tajbakhsh · Exlumina**
 
