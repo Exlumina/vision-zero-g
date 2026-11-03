@@ -2,6 +2,16 @@
 
 **A camera-drone prototype designed for microgravity inside spacecraft cabins.**
 
+## Download
+
+<p>
+  <a href="https://raw.githubusercontent.com/Exlumina/vision-zero-g/main/hardware/cad/EXRI_Vision_Zero-G_v0.5.1.step"><img src=".github/downloads/download-step.svg" width="240" height="48" alt="Download CAD assembly (STEP, v0.5.1)"></a>
+  <a href="https://raw.githubusercontent.com/Exlumina/vision-zero-g/main/hardware/drawings/EXS_Vision_Zero-G_v0.5.2_Drawing_v10.pdf"><img src=".github/downloads/download-pdf.svg" width="240" height="48" alt="Download engineering drawing (PDF, v0.5.2)"></a>
+</p>
+
+CAD assembly v0.5.1 · STEP, 40.6 MB<br>
+Engineering drawing v0.5.2 · PDF, 1 sheet
+
 I designed Vision Zero-G in Fusion 360 around a printed frame, eight electric ducted fan modules, a Pixhawk controller and a Raspberry Pi companion computer. The aim was to film crew activities from a mobile viewpoint, without a fixed camera mount or continuous manual positioning.
 
 <p align="center">
@@ -16,9 +26,6 @@ Vision Zero-G was discontinued after the project's sponsor lost funding. Develop
 This repository preserves that work. Autonomous navigation and camera tracking were intended capabilities; the archived sketches are not deployable flight firmware.
 
 ## Design files
-
-[![Download CAD assembly (STEP, v0.5.1)](https://img.shields.io/badge/Download-CAD_assembly_STEP-222222?style=for-the-badge)](https://raw.githubusercontent.com/Exlumina/vision-zero-g/main/hardware/cad/EXRI_Vision_Zero-G_v0.5.1.step)
-[![Download engineering drawing (PDF, v0.5.2)](https://img.shields.io/badge/Download-Engineering_drawing_PDF-222222?style=for-the-badge)](https://raw.githubusercontent.com/Exlumina/vision-zero-g/main/hardware/drawings/EXS_Vision_Zero-G_v0.5.2_Drawing_v10.pdf)
 
 | Asset | Version | Format |
 | --- | --- | --- |
