@@ -45,6 +45,6 @@ The drawing covers a later revision than the STEP. The STEP contains assembly ge
 | [Photographs](docs/gallery.md) | Five views of the physical prototype |
 | [Project history](docs/development.md) | Development record and work left unfinished |
 
-**Mechanical design: Kian Konrad Tajbakhsh · Exlumina**
+**Mechanical design: Kian Konrad · Exlumina**
 
 [Rights and attribution](NOTICE.md) · [File checksums](SHA256SUMS)
